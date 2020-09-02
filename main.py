@@ -26,8 +26,7 @@ class Main:
                 'n=&tz_name=Europe/Stockholm&tz_offset=7200&app_language=sv&carrier_region=SE&curre'
                 'nt_region=SE&aid=1233&mcc_mnc=24006&screen_width=1242&uoo=0&content_language=&lang'
                 'uage=sv&cdid=D3BE1FA3-8B8C-4E22-A438-7E3CE20779B0&build_number=174014&app_version='
-                f'17.4.0&unique_id={arg}',
-                verify=False, headers={
+                f'17.4.0&unique_id={arg}', verify=False, headers={
                     'Host': 'api16-normal-c-useast1a.tiktokv.com',
                     'Connection': 'keep-alive',
                     'x-Tt-Token': '03c3509d1a65530bf749219e146198f87432b308cd8eddff0d3f78b9a0e8de5a'
