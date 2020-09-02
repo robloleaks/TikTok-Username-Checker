@@ -55,12 +55,12 @@ class Main:
     def _multi_threading(self):
         threading.Thread(target=self._update_title).start()
         for username in self.usernames:
-            while True:
+            attempting = True
+
+            while attempting:
                 if threading.active_count() <= 300:
                     threading.Thread(target=self._checker, args=(username,)).start()
-                    break
-                else:
-                    continue
+                    attempting = False
 
     def _update_title(self):
         while (checked := (self.variables['available'] + self.variables['unavailable'])) < len(
