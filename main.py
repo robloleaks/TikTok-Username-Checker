@@ -54,6 +54,7 @@ class Main:
 
     def _multi_threading(self):
         threading.Thread(target=self._update_title).start()
+
         for username in self.usernames:
             attempting = True
 
