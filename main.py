@@ -18,12 +18,26 @@ class Main:
         try:
             available = requests.get(
                 'https://api16-normal-c-useast1a.tiktokv.com/aweme/v1/unique/id/check/?device_id=66'
-                '22992447704270341&os_version=13.6.1&app_name=musical_ly&version_code=17.4.0&channe'
-                f'l=App%20Store&device_platform=iphone&device_type=iPhone10,5&unique_id={arg}',
+                '22992447704270341&os_version=13.6.1&residence=SE&iid=6866025950309811973&app_name='
+                'musical_ly&pass-route=1&locale=sv-SE&pass-region=1&ac=WIFI&sys_region=SE&version_c'
+                'ode=17.4.0&vid=09C2D5BA-EAD7-4764-9B03-A0045A96E89E&channel=App%20Store&op_region='
+                'SE&os_api=18&idfa=B5AFE005-817F-4179-BCE8-11D5B64C13FA&device_platform=iphone&devi'
+                'ce_type=iPhone10,5&openudid=a08e4f6286bab393c464d66e7bc51cb860c2efb8&account_regio'
+                'n=&tz_name=Europe/Stockholm&tz_offset=7200&app_language=sv&carrier_region=SE&curre'
+                'nt_region=SE&aid=1233&mcc_mnc=24006&screen_width=1242&uoo=0&content_language=&lang'
+                'uage=sv&cdid=D3BE1FA3-8B8C-4E22-A438-7E3CE20779B0&build_number=174014&app_version='
+                f'17.4.0&unique_id={arg}',
                 verify=False, headers={
-                    'x-Tt-Token': '0344ccb2867669f08b78f1db63b65933c1b38145729bad08b9725b6218dd2649'
-                                  '4098feb938ee86b1ca42cac5fd714b8da943',
-                    'sdk-version': '1'
+                    'Host': 'api16-normal-c-useast1a.tiktokv.com',
+                    'Connection': 'keep-alive',
+                    'x-Tt-Token': '03c3509d1a65530bf749219e146198f87432b308cd8eddff0d3f78b9a0e8de5a'
+                                  '21412302d49bcb78148f1bf91fb1bb27a65',
+                    'sdk-version': '1',
+                    'User-Agent': 'TikTok 17.4.0 rv:174014 (iPhone; iOS 13.6.1; sv_SE) Cronet',
+                    'x-tt-store-idc': 'maliva',
+                    'x-tt-store-region': 'se',
+                    'X-SS-DP': '1233',
+                    'Accept-Encoding': 'gzip, deflate'
                 }
             ).json()['is_valid']
         except Exception:
