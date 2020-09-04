@@ -1,9 +1,9 @@
-import os
-import time
-import requests
-import threading
 from urllib3 import disable_warnings
-disable_warnings()
+import os
+import threading
+import time
+
+import requests
 
 
 class Main:
@@ -105,5 +105,6 @@ class Main:
 
 if __name__ == '__main__':
     os.system('cls && title [TikTok Username Checker]')
+    disable_warnings()
     main = Main()
     main.setup()
