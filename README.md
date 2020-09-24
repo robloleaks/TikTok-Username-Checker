@@ -20,3 +20,5 @@ His Discord username: verdict#0200
 
 ## Legal Notice
 This is illegal if you use it without the consent of the creators — in this case, the TikTok team. I am not accountable for any of your actions; this was merely a speedrun to demonstrate how username checkers work. Please do not misuse this tool.
+
+[![Run on Repl.it](https://repl.it/badge/github/zoony1337/TikTok-Username-Checker)](https://repl.it/github/zoony1337/TikTok-Username-Checker)
